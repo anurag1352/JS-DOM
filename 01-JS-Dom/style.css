@@ -1,0 +1,122 @@
+/* Reset & base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0d0d0d;
+    color: white;
+    line-height: 1.6;
+  }
+  
+  /* Hero section */
+  .hero {
+    background: url('https://wallpapercave.com/wp/wp4056410.jpg') no-repeat center center/cover;
+    text-align: center;
+    padding: 100px 20px;
+    color: #ff1c1c;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px black;
+  }
+  
+  .hero p {
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 3px black;
+  }
+  
+  /* About section */
+  .about {
+    padding: 50px 20px;
+    background-color: #1a1a1a;
+    text-align: center;
+  }
+  
+  .about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ff4d4d;
+  }
+
+  /* Skills Section */
+#skills {
+    background-color: #1a1a1a;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  #skills h2 {
+    color: #ff4d4d;
+    margin-bottom: 20px;
+  }
+  
+  .skill-list {
+    list-style-type: square;
+    padding-left: 0;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .skill-list li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    padding-left: 20px;
+    position: relative;
+  }
+  
+  .skill-list li::before {
+    content: "🕷️";
+    position: absolute;
+    left: 0;
+    transform: translateX(-20px);
+  }
+  
+  
+  /* Projects section */
+  .projects {
+    padding: 50px 20px;
+    background-color: #262626;
+    text-align: center;
+  }
+  
+  .projects h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #ff4d4d;
+  }
+  
+  .project-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .project-card {
+    background: #333;
+    border: 2px solid #ff1c1c;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: scale(1.05);
+    background-color: #444;
+  }
+  
+  /* Footer */
+  footer {
+    padding: 20px;
+    text-align: center;
+    background: #0d0d0d;
+    color: #999;
+  }
+  
