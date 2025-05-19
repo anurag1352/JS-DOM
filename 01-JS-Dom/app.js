@@ -36,8 +36,24 @@
 // console.log(change);
 
 //QUERY SELECTORS.
+// console.log(document.querySelector("p"));
+// console.log(document.querySelector("#footer"));
+// console.log(document.querySelector(".project-card"));
+// console.log(document.querySelector("section div"));
+// console.log(document.querySelectorAll("section div"));
+
+
+//SETTING CONTENT IN OBJECTS (MANIPULATION).
 console.log(document.querySelector("p"));
-console.log(document.querySelector("#footer"));
-console.log(document.querySelector(".project-card"));
-console.log(document.querySelector("section div"));
-console.log(document.querySelectorAll("section div"));
+let para = document.querySelector(".peter");
+console.dir(para);
+console.log(para.innerHTML);
+console.log(para.innerText);
+console.log(para.textContent);
+para.innerText = "abc";
+console.log(para);
+
+let heading = document.querySelector("h1");
+console.log(heading.innerText);
+heading.innerHTML = `<u>${heading.innerHTML}</u>`;
+console.log(heading);
