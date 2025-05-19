@@ -44,16 +44,40 @@
 
 
 //SETTING CONTENT IN OBJECTS (MANIPULATION).
-console.log(document.querySelector("p"));
-let para = document.querySelector(".peter");
-console.dir(para);
-console.log(para.innerHTML);
-console.log(para.innerText);
-console.log(para.textContent);
-para.innerText = "abc";
-console.log(para);
+// console.log(document.querySelector("p"));
+// let para = document.querySelector(".peter");
+// console.dir(para);
+// console.log(para.innerHTML);
+// console.log(para.innerText);
+// console.log(para.textContent);
+// para.innerText = "abc";
+// console.log(para);
 
-let heading = document.querySelector("h1");
-console.log(heading.innerText);
-heading.innerHTML = `<u>${heading.innerHTML}</u>`;
-console.log(heading);
+// let heading = document.querySelector("h1");
+// console.log(heading.innerText);
+// heading.innerHTML = `<u>${heading.innerHTML}</u>`;
+// console.log(heading);
+
+//MANIPULATING ATTRIBUTES.
+
+// let self = document.querySelector(".about");
+// console.log(self);
+// console.log(self.getAttribute('id'));
+// self.setAttribute('id', 'spiderMan');
+// console.log(self.getAttribute('id'));
+
+
+//MANIPULATING STYLE
+
+// let head = document.querySelector("h1");
+// console.log(head);
+// console.log(head.style);
+
+// head.style.color = "white";
+// console.log(head)
+
+// let skill = document.querySelectorAll("#skills .skill-list");
+
+// for(mySkill of skill){
+//     mySkill.style.color = "red";
+// }
