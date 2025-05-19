@@ -21,11 +21,23 @@
 // console.dir(foot.tagName);
 
 //Elementby ClassName.
-console.log(document.getElementsByClassName("project-card"));
-console.log(document.getElementsByClassName("project-card")[0].tagName);
+// console.log(document.getElementsByClassName("project-card"));
+// console.log(document.getElementsByClassName("project-card")[0].tagName);
 
-let card = document.getElementsByClassName("project-card");
+// let card = document.getElementsByClassName("project-card");
 
-for(let i = 0; i <= card.length; i++){
-    console.log(card);
-}
+// for(let i = 0; i <= card.length; i++){
+//     console.log(card);
+// }
+
+//Elementby TagName.
+// console.log(document.getElementsByTagName("p"));
+// let change = document.getElementsByTagName("P") [1].innerHTML = "abc";
+// console.log(change);
+
+//QUERY SELECTORS.
+console.log(document.querySelector("p"));
+console.log(document.querySelector("#footer"));
+console.log(document.querySelector(".project-card"));
+console.log(document.querySelector("section div"));
+console.log(document.querySelectorAll("section div"));
