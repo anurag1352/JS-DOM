@@ -19,20 +19,31 @@
 
 
 //       ADD EVENT LISTENER
-let btns = document.querySelectorAll("button");
+// let btns = document.querySelectorAll("button");
 
-for(btn of btns) {
-    // btn.addEventListener("click", sayHello);
-    // btn.addEventListener("click", sayName);
-    btn.addEventListener("dblclick", function () {
-        console.log("You double clicked me");
-    });
-}
+// for(btn of btns) {
+//     // btn.addEventListener("click", sayHello);
+//     // btn.addEventListener("click", sayName);
+//     btn.addEventListener("dblclick", function () {
+//         console.log("You double clicked me");
+//     });
+// }
 
-function sayHello() {
-    console.log("Hello");
-}
+// function sayHello() {
+//     console.log("Hello");
+// }
 
-function sayName() {
-    console.log("Apna college");
-}
+// function sayName() {
+//     console.log("Apna college");
+// }
+
+let p = document.querySelector("p");
+
+p.addEventListener("click", function() {
+    console.log("para was clicked")
+})
+
+let box = document.querySelector(".box");
+box.addEventListener("mouseenter", function() {
+    console.log("Kisi na ungli kari");
+})
