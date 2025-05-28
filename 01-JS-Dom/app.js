@@ -100,3 +100,64 @@ console.log(valid);
 
 let toggle = heading.classList.toggle("abc");
 console.log(toggle);
+console.log(toggle.classList);
+
+//NAVIGATION
+let h3 = document.querySelector('h3')
+console.log(h3.parentElement);
+
+let projectCard = document.querySelector(".project-card");
+console.log(projectCard.children);
+console.log(projectCard.childElementCount);
+
+let skill = document.querySelector("#skills");
+console.log(skill.children);
+
+let ul = document.querySelector("#skills ul");
+console.log(ul.children);
+console.log(ul.children[0]);
+console.log(ul.children[1]);
+console.log(ul.children[2]);
+console.log(ul.children[2].previousElementSibling);
+console.log(ul.children[1].nextElementSibling);
+console.log(ul.childElementCount);
+
+let h1 = document.querySelector(".hero");
+console.log(h1.children);
+
+//  ADDING ELEMENT.
+
+// let newP = document.createElement("p");
+// console.dir(newP);
+// newP.innerHTML = "Hey i new p";
+
+// // let body = document.querySelector("body");
+// // body.appendChild(newP);
+
+// let skills = document.querySelector("#skills .skill-list");
+// skills.appendChild(newP);
+
+// newP.append(" This is new text");
+// newP.prepend(" New paragraph ");
+
+// let btn = document.createElement("button");
+// console.dir(btn);
+// btn.innerHTML = "Click me";
+
+// let skil = document.querySelector("#skills .skill-list");
+// skil.appendChild(btn);
+
+let btn = document.createElement("button");
+console.dir(btn);
+btn.innerHTML = "Click me";
+
+let about = document.querySelector(".about .peter");
+// about.insertAdjacentElement('beforebegin', btn);
+//about.insertAdjacentElement('afterbegin', btn);
+//about.insertAdjacentElement('afterend', btn);
+about.insertAdjacentElement('beforeend', btn);
+
+//    REMOVE ELEMENTS
+let body = document.querySelector(".about .peter");
+let dlt = body.removeChild(btn);
+console.log(dlt);
