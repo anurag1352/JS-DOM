@@ -81,3 +81,22 @@
 // for(mySkill of skill){
 //     mySkill.style.color = "red";
 // }
+
+//CLASS-LIST
+let section = document.querySelector('.projects .project-card');
+console.log(section.classList);
+
+let heading = document.querySelector('h1');
+console.log(heading.classList);
+
+heading.classList.add("abc");
+console.log(heading.classList);
+
+// heading.classList.remove("abc");
+// console.log(heading.classList);
+
+let valid = heading.classList.contains("abc");
+console.log(valid);
+
+let toggle = heading.classList.toggle("abc");
+console.log(toggle);
