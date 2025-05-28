@@ -37,13 +37,32 @@
 //     console.log("Apna college");
 // }
 
+// let p = document.querySelector("p");
+
+// p.addEventListener("click", function() {
+//     console.log("para was clicked")
+// })
+
+// let box = document.querySelector(".box");
+// box.addEventListener("mouseenter", function() {
+//     console.log("Kisi na ungli kari");
+// })
+
+//        THIS KEYWORD
+let btn = document.querySelector("button");
 let p = document.querySelector("p");
+let h1 = document.querySelector("h1");
+let h3 = document.querySelector("h3");
 
-p.addEventListener("click", function() {
-    console.log("para was clicked")
-})
+function changeColor() {
+        console.log(this.innerText);
+        this.style.backgroundColor = "blue";
+}
 
-let box = document.querySelector(".box");
-box.addEventListener("mouseenter", function() {
-    console.log("Kisi na ungli kari");
-})
+btn.addEventListener("click", changeColor) 
+    // console.log(this);
+    // console.dir(this);
+
+h1.addEventListener("click", changeColor);
+h3.addEventListener("click", changeColor);
+p.addEventListener("click", changeColor);
